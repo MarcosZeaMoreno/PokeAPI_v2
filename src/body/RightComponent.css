@@ -1,5 +1,12 @@
 p {
 	padding: 0;
 	margin: 0;
-	
+}
+
+#generated-img {
+	width: 100%;
+}
+
+#loading {
+	text-align: center;
 }

@@ -2,11 +2,10 @@ import './app.css'
 import LeftComponent from './body/LeftComponent'
 import RightComponent from './body/RightComponent'
 import logo from './assets/pokeball.svg'
-import { FC } from 'react'
+import { FC, useState } from 'react'
 
 const App: FC = () => {
-
-	fetch('/api/test').then(data => data.json()).then(json => console.log(json))
+	const [prompt, setPrompt] = useState('')
 
 	return (
 	<>
@@ -18,10 +17,10 @@ const App: FC = () => {
 		</div>
 		<div className="content">
 			<div className="left-div">
-				<LeftComponent />
+				<LeftComponent setPrompt={setPrompt} />
 			</div>
 			<div className="right-div">
-				<RightComponent />
+				<RightComponent prompt={prompt} />
 			</div>
     	</div>
 	</>
