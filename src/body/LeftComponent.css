@@ -1,0 +1,47 @@
+input {
+	width: 100%;
+	padding: 12px;
+	height: auto;
+	margin: 8px 0 10px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+select {
+	width: 100%;
+	padding: 12px;
+	height: auto;
+	margin: 8px 0 10px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+option {
+	padding: 20px;
+	height: auto;
+	margin: 8px 0 10px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+label {
+	float: left;
+}
+
+textarea {
+	width: 100%;
+	padding: 12px;
+	height: 100px;
+	resize: none;
+	margin: 8px 0 10px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+#Range {
+	accent-color: red;
+}
