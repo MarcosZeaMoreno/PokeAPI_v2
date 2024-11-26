@@ -25,14 +25,14 @@ const LeftComponent: FC<LeftComponentProps> = ({ setPrompt }) => {
 					id="name" 
 					placeholder="Name" 
 					value={name} 
-					onChange={(e) => setName(e.target.value || '')} 
+					onChange={(e) => setName((e.target as HTMLInputElement).value || '')} 
 				/>
 				<label htmlFor="type">Type</label>
 				<select 
 					name="select" 
 					id="type" 
 					value={type} 
-					onChange={(e) => setType(e.target.value || '')}
+					onChange={(e) => setType((e.target as HTMLSelectElement).value || '')}
 				>
 					<option value="fire">Fire</option>
 					<option value="water">Water</option>
@@ -58,14 +58,14 @@ const LeftComponent: FC<LeftComponentProps> = ({ setPrompt }) => {
 					id="description" 
 					placeholder="Description" 
 					value={description} 
-					onChange={(e) => setDescription(e.target.value || '')}
+					onChange={(e) => setDescription((e.target as HTMLTextAreaElement).value || '')}
 				/>
 				<label htmlFor="Range">Guidance</label>
 				<input 
 					id="Range" 
 					type="range" 
 					value={guidance} 
-					onChange={(e) => setGuidance(Number(e.target.value || 50))}
+					onChange={(e) => setGuidance(Number((e.target as HTMLInputElement).value || 50))}
 				/>
 				<button type="button" onClick={handleGenerate}>Generate Image</button>
 			</form>
