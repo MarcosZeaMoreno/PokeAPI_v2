@@ -3,100 +3,101 @@
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
-  }
-  
-  .logo {
+}
+
+.logo {
 	height: 4em;
 	padding: 0 1.5em 0 0;
 	will-change: filter;
 	transition: filter 300ms;
-  }
-  .logo:hover {
+}
+
+.logo:hover {
 	filter: drop-shadow(0 0 1em #ff3838aa);
-  }
-  
-  .content {
-	  display: grid;
-	  gap: 2em;
-	  grid-template-columns: 1fr 1fr;
-	}
-	
-	.header {
-	  display: flex;
-	  justify-content: left;
-	  align-items: center;
-	  margin-bottom: 2em;
-	}
-	
-  @media screen and (max-width: 1200px) {
+}
+
+.content {
+	display: grid;
+	gap: 2em;
+	grid-template-columns: 1fr 1fr;
+}
+
+.header {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 1200px) {
 	.logo {
-	  height: 3.5em;
+		height: 3.5em;
 	}
-  
+
 	.content {
-	  grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
-  
+
 	.title {
-	  font-size: 2.5em;
+		font-size: 2.5em;
 	}
-  }
-  
-  @media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 800px) {
 	.logo {
-	  height: 3.5em;
+		height: 3.5em;
 	}
-  
+
 	.content {
-	  grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
-  
+
 	.title {
-	  font-size: 2em;
+		font-size: 2em;
 	}
-  
+
 	.logo:hover {
-	  filter: none;
+		filter: none;
 	}
-  
-  }
-  
-  @media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 600px) {
 	.logo {
-	  padding-right: 0;
-	  height: 3em;
+		padding-right: 0;
+		height: 3em;
 	}
-  
+
 	.content {
-	  grid-template-columns: 1fr;
+		grid-template-columns: 1fr;
 	}
-  
+
 	.title {
-	  font-size: 1.4em;
+		font-size: 1.4em;
 	}
-  
+
 	.header {
-	  flex-direction: column;
-	  align-items: center;
-	  text-align: center;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
-	
+
 	.right-div {
-	  margin-top: 2em;
+		margin-top: 2em;
 	}
-	  
-  }
-  
-  @media screen and (max-width: 400px) {
+
+}
+
+@media screen and (max-width: 400px) {
 	.logo {
-	  height: 2em;
+		height: 2em;
 	}
-  
+
 	.title {
-	  font-size: 1.2em;
+		font-size: 1.2em;
 	}
-  
+
 	.content {
-	  grid-template-columns: 1fr;
+		grid-template-columns: 1fr;
 	}
-  }
+}

@@ -2,7 +2,7 @@ import './LeftComponent.css'
 import { FC, useState } from 'react'
 
 interface LeftComponentProps {
-  setPrompt: (prompt: string) => void
+	setPrompt: (prompt: string) => void
 }
 
 const LeftComponent: FC<LeftComponentProps> = ({ setPrompt }) => {
@@ -20,18 +20,18 @@ const LeftComponent: FC<LeftComponentProps> = ({ setPrompt }) => {
 		<div>
 			<form action="">
 				<label htmlFor="name">Name</label>
-				<input 
-					type="text" 
-					id="name" 
-					placeholder="Name" 
-					value={name} 
-					onChange={(e) => setName((e.target as HTMLInputElement).value || '')} 
+				<input
+					type="text"
+					id="name"
+					placeholder="Name"
+					value={name}
+					onChange={(e) => setName((e.target as HTMLInputElement).value || '')}
 				/>
 				<label htmlFor="type">Type</label>
-				<select 
-					name="select" 
-					id="type" 
-					value={type} 
+				<select
+					name="select"
+					id="type"
+					value={type}
 					onChange={(e) => setType((e.target as HTMLSelectElement).value || '')}
 				>
 					<option value="fire">Fire</option>
@@ -54,17 +54,17 @@ const LeftComponent: FC<LeftComponentProps> = ({ setPrompt }) => {
 					<option value="normal">Normal</option>
 				</select>
 				<label htmlFor="description">Description</label>
-				<textarea 
-					id="description" 
-					placeholder="Description" 
-					value={description} 
+				<textarea
+					id="description"
+					placeholder="Description"
+					value={description}
 					onChange={(e) => setDescription((e.target as HTMLTextAreaElement).value || '')}
 				/>
 				<label htmlFor="Range">Guidance</label>
-				<input 
-					id="Range" 
-					type="range" 
-					value={guidance} 
+				<input
+					id="Range"
+					type="range"
+					value={guidance}
 					onChange={(e) => setGuidance(Number((e.target as HTMLInputElement).value || 50))}
 				/>
 				<button type="button" onClick={handleGenerate}>Generate Image</button>

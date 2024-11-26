@@ -2,7 +2,7 @@ import './RightComponent.css'
 import { FC, useEffect, useState } from 'react'
 
 interface RightComponentProps {
-  prompt: string
+	prompt: string
 }
 
 const RightComponent: FC<RightComponentProps> = ({ prompt }) => {
@@ -27,7 +27,7 @@ const RightComponent: FC<RightComponentProps> = ({ prompt }) => {
 		<div>
 			<p>Output</p>
 			<hr />
-			{loading ? <p id="loading">Loading...</p> : imageUrl ? <img id="generated-img" src={imageUrl} alt="Generated" /> : <p id ="loading">No image generated yet.</p>}
+			{loading ? <p id="loading">Loading...</p> : imageUrl ? <img id="generated-img" src={imageUrl} alt="Generated" /> : <p id="loading">No image generated yet.</p>}
 		</div>
 	)
 }
